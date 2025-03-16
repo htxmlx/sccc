@@ -67,7 +67,7 @@ export const HeroHeader = () => {
                                     <li key={index}>
                                         <Link
                                             href={item.href}
-                                            className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                                            className="hover:text-accent-foreground block duration-150 font-semibold"
                                         >
                                             <span>{item.name}</span>
                                         </Link>
@@ -83,7 +83,7 @@ export const HeroHeader = () => {
                                         <li key={index}>
                                             <Link
                                                 href={item.href}
-                                                className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                                                className="hover:text-accent-foreground block duration-150 font-semibold"
                                             >
                                                 <span>{item.name}</span>
                                             </Link>
@@ -92,32 +92,7 @@ export const HeroHeader = () => {
                                 </ul>
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                <Button
-                                    asChild
-                                    variant="outline"
-                                    size="sm"
-                                    className={cn(isScrolled && "lg:hidden")}
-                                >
-                                    <Link href="#">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(isScrolled && "lg:hidden")}
-                                >
-                                    <Link href="#">
-                                        <span>Sign Up</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(
-                                        isScrolled ? "lg:inline-flex" : "hidden"
-                                    )}
-                                >
+                                <Button asChild size="sm">
                                     <Link href="#">
                                         <span>Visit Us</span>
                                     </Link>
