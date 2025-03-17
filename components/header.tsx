@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
 const menuItems = [
     { name: "About Us", href: "#link" },
     { name: "Services", href: "#link" },
-    { name: "Events", href: "#link" },
+    { name: "Events", href: "/events" },
     { name: "Contact", href: "#link" },
 ];
 
-export const HeroHeader = () => {
+export const Header = () => {
     const [menuState, setMenuState] = React.useState(false);
     const [isScrolled, setIsScrolled] = React.useState(false);
 

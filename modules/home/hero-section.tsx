@@ -1,40 +1,19 @@
-import React from "react";
-import Link from "next/link";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { Header } from "@/components/header";
+import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
+import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { TextEffect } from "@/components/motion-primitives/text-effect";
-import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
-import { HeroHeader } from "@/components/hero5-header";
+import Link from "next/link";
 import ContentSection from "./content-3";
+import FAQs from "./faqs";
 import StatsSection from "./stats";
 import WallOfLoveSection from "./testimonials";
-import FAQs from "./faqs";
-
-const transitionVariants = {
-    item: {
-        hidden: {
-            opacity: 0,
-            filter: "blur(12px)",
-            y: 12,
-        },
-        visible: {
-            opacity: 1,
-            filter: "blur(0px)",
-            y: 0,
-            transition: {
-                type: "spring",
-                bounce: 0.3,
-                duration: 1.5,
-            },
-        },
-    },
-};
+import { transitionVariants } from "@/lib/transitions";
 
 export default function HeroSection() {
     return (
         <>
-            <HeroHeader />
+            <Header />
             <main className="overflow-hidden">
                 <div
                     aria-hidden
