@@ -67,7 +67,7 @@ export default function WallOfLoveSection() {
     return (
         <section>
             <div className="py-16 md:py-32">
-                <div className="mx-auto max-w-6xl px-6">
+                <div className="mx-auto max-w-7xl px-6 md:px-0">
                     <div className="text-center">
                         <h2 className="text-title text-3xl font-semibold">
                             Meet the Team at Smyrna Christian Church
