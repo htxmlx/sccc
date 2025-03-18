@@ -7,10 +7,10 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-    { name: "About Us", href: "#link" },
-    { name: "Services", href: "#link" },
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/services" },
     { name: "Events", href: "/events" },
-    { name: "Contact", href: "#link" },
+    { name: "Contact", href: "/contact" },
 ];
 
 export const Header = () => {

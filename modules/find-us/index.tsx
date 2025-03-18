@@ -17,7 +17,6 @@ const MapboxExample = dynamic(() => import("@/modules/find-us/map"), {
 const FindUsPage = () => {
     return (
         <>
-            <Header />
             <main className="overflow-hidden">
                 <div
                     aria-hidden

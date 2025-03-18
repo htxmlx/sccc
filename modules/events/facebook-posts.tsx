@@ -41,7 +41,6 @@ export default function FacebookPosts() {
 
     return (
         <>
-            <Header />
             <main className="overflow-hidden">
                 <div
                     aria-hidden
