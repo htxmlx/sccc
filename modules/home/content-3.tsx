@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ContentSection() {
     return (
         <section className="py-16 md:py-32">
-            <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
+            <div className="mx-auto max-w-7xl space-y-8 px-6 md:space-y-12">
                 <img
                     className="rounded-(--radius) w-full"
                     src="https://www.shutterstock.com/image-photo/christian-raise-hand-worship-praise-600nw-2486497837.jpg"
