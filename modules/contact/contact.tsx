@@ -62,7 +62,7 @@ export default function ContactSection() {
                     </h3>
                     <p className="text-gray-600 text-sm mb-6 flex-grow text-center">
                         You can donate to our church via GCash. Simply scan the
-                        QR code below or send us a message at 0917-123-4567.
+                        QR code below or send us a message at 0960-597-6282.
                     </p>
                     <Image
                         src="/smyrna-gcash.png"

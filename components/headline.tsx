@@ -10,10 +10,12 @@ export interface HeadlineProps {
     primaryButton?: {
         text: string;
         href: string;
+        isExternal?: boolean;
     };
     secondaryButton?: {
         text: string;
         href: string;
+        isExternal?: boolean;
     };
 }
 
@@ -70,7 +72,14 @@ export default function Headline({
                                     size="lg"
                                     className="rounded-xl px-5 text-base"
                                 >
-                                    <Link href={primaryButton.href}>
+                                    <Link
+                                        href={primaryButton.href}
+                                        target={
+                                            primaryButton.isExternal
+                                                ? "_blank"
+                                                : undefined
+                                        }
+                                    >
                                         <span className="text-nowrap">
                                             {primaryButton.text}
                                         </span>
@@ -86,7 +95,14 @@ export default function Headline({
                                 variant="ghost"
                                 className="h-10.5 rounded-xl px-5"
                             >
-                                <Link href={secondaryButton.href}>
+                                <Link
+                                    href={secondaryButton.href}
+                                    target={
+                                        secondaryButton.isExternal
+                                            ? "_blank"
+                                            : undefined
+                                    }
+                                >
                                     <span className="text-nowrap">
                                         {secondaryButton.text}
                                     </span>

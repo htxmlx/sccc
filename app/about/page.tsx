@@ -6,6 +6,7 @@ import FAQs from "@/modules/about/faqs";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { transitionVariants } from "@/lib/transitions";
 import Headline from "@/components/headline";
+import CalltoActionSection from "@/components/cta";
 
 export default function AboutUs() {
     return (
@@ -31,6 +32,7 @@ export default function AboutUs() {
                 <WorshipTeam />
                 <MissionVision />
                 <FAQs />
+                <CalltoActionSection />
             </AnimatedGroup>
         </Section>
     );
