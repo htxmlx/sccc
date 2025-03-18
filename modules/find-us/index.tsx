@@ -1,8 +1,8 @@
 "use client";
 
 import { Header } from "@/components/header";
-import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
-import { TextEffect } from "@/components/motion-primitives/text-effect";
+import { AnimatedGroup } from "@/components/ui/animated-group";
+import { TextEffect } from "@/components/ui/text-effect";
 import { Button } from "@/components/ui/button";
 import { transitionVariants } from "@/lib/transitions";
 import dynamic from "next/dynamic";
