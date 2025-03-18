@@ -9,7 +9,7 @@ import Headline from "@/components/headline";
 
 export default function AboutUs() {
     return (
-        <Section c>
+        <Section>
             <Headline
                 title="About Our Church"
                 subtitle="Smyrna Christian Church is a community of believers who are passionate about serving Jesus Christ and sharing the love of God with our community."
