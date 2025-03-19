@@ -10,7 +10,7 @@ const menuItems = [
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Events", href: "/events" },
-    { name: "Contact", href: "/contact" },
+    { name: "Resources", href: "/resources" },
 ];
 
 export const Header = () => {
@@ -93,8 +93,8 @@ export const Header = () => {
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button asChild size="sm">
-                                    <Link href="/visit-us">
-                                        <span>Visit Us</span>
+                                    <Link href="/contact">
+                                        <span>Contact Us</span>
                                     </Link>
                                 </Button>
                             </div>
