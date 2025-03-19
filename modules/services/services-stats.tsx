@@ -1,7 +1,7 @@
 export default function ServicesStatsSection() {
     return (
         <section className="py-16 md:py-32">
-            <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
+            <div className="mx-auto max-w-7xl space-y-8 px-6 md:space-y-12">
                 <div className="relative z-10 max-w-xl space-y-6">
                     <h2 className="text-4xl font-medium lg:text-5xl">
                         Church Services

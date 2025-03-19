@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <section className="max-w-6xl mx-auto px-4 py-12">
+        <section className="max-w-7xl mx-auto px-6 py-12">
             <div className="grid md:grid-cols-3 gap-6 mb-8">
                 {/* Contact a Pastor Card */}
                 <div className="border border-gray-200 rounded-lg p-6 flex flex-col h-full items-center">

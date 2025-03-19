@@ -61,7 +61,7 @@ const FindUsPage = () => {
                             />
                         </AnimatedGroup>
                         <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
-                        <div className="mx-auto max-w-7xl px-6">
+<div className="mx-auto max-w-7xl px-6">
                             <div className="text-center max-w-4xl sm:mx-auto lg:mr-auto lg:mt-0">
                                 <TextEffect
                                     className="mt-8 font-black text-4xl md:text-5xl lg:mt-16"

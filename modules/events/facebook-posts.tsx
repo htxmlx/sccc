@@ -66,7 +66,7 @@ export default function FacebookPosts() {
     return (
         <section>
             <div className="relative pt-16 md:pt-24">
-                <div className="mx-auto max-w-7xl px-6">
+<div className="mx-auto max-w-7xl px-6">
                     <div className="text-center max-w-4xl sm:mx-auto lg:mr-auto lg:mt-0">
                         <div className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row min-h-screen">
                             {loading ? (
@@ -153,5 +153,3 @@ export default function FacebookPosts() {
         </section>
     );
 }
-
-

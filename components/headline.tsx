@@ -27,7 +27,7 @@ export default function Headline({
 }: HeadlineProps) {
     return (
         <div>
-            <div className="mx-auto max-w-7xl px-6">
+<div className="mx-auto max-w-7xl px-6">
                 <div className="text-center max-w-4xl sm:mx-auto lg:mr-auto lg:mt-0">
                     <TextEffect
                         preset="fade-in-blur"
