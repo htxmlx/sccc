@@ -2,22 +2,14 @@ import Headline from "@/components/headline";
 import Section from "@/components/section";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { transitionVariants } from "@/lib/transitions";
+import GenerateSermonsSection from "@/modules/sermon/generate-sermon";
 
-export default function Home() {
+export default function Sermon() {
     return (
         <Section>
             <Headline
-                title="Welcome to Smyrna Christian Church"
-                subtitle="A place to connect with God, grow in faith, and
-                            serve the community."
-                primaryButton={{
-                    href: "#link",
-                    text: "Join Us",
-                }}
-                secondaryButton={{
-                    href: "#link",
-                    text: "Learn More",
-                }}
+                title="AI Sermons Assistant"
+                subtitle="Use our sermon outline generator to help you write a sermon that is relevant to your congregation."
             />
             <AnimatedGroup
                 variants={{
@@ -32,7 +24,7 @@ export default function Home() {
                     ...transitionVariants,
                 }}
             >
-               <GenerateSermonsSection/>
+                <GenerateSermonsSection />
             </AnimatedGroup>
         </Section>
     );

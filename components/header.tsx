@@ -10,7 +10,7 @@ const menuItems = [
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Events", href: "/events" },
-    { name: "Resources", href: "/resources" },
+    { name: "Sermons Assistant", href: "/sermon" },
 ];
 
 export const Header = () => {
