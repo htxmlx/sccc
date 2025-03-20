@@ -5,13 +5,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
-
-const menuItems = [
-    { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Events", href: "/events" },
-    { name: "Sermons Assistant", href: "/sermon" },
-];
+import { menuItems } from "@/lib/site";
 
 export const Header = () => {
     const [menuState, setMenuState] = React.useState(false);
