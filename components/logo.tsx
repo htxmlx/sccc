@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Logo = ({ className }: { className?: string }) => {
     return (
         <Image
-            src="/logo.png"
+            src="/icon.png"
             alt="logo"
             className="rounded-full object-cover"
             width={50}

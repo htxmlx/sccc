@@ -1,31 +1,19 @@
-import Headline from "@/components/headline";
+import { Metadata } from "next";
+import { siteConfig } from "@/lib/site";
 import Section from "@/components/section";
-import { AnimatedGroup } from "@/components/ui/animated-group";
-import { transitionVariants } from "@/lib/transitions";
-import GenerateSermonsSection from "@/modules/sermon/generate-sermon";
+import GenerateSermon from "@/modules/sermon/generate-sermon";
+import Headline from "@/components/headline";
+
+export const metadata: Metadata = {
+    title: siteConfig.sermon.title,
+    description: siteConfig.sermon.description,
+};
 
 export default function Sermon() {
     return (
         <Section>
-            <Headline
-                title="AI Sermons Assistant"
-                subtitle="Use our sermon outline generator to help you write a sermon that is relevant to your congregation."
-            />
-            <AnimatedGroup
-                variants={{
-                    container: {
-                        visible: {
-                            transition: {
-                                staggerChildren: 0.05,
-                                delayChildren: 0.75,
-                            },
-                        },
-                    },
-                    ...transitionVariants,
-                }}
-            >
-                <GenerateSermonsSection />
-            </AnimatedGroup>
+            <Headline title="Sermons" subtitle="Listen to our past sermons" />
+            <GenerateSermon />
         </Section>
     );
 }

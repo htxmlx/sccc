@@ -1,31 +1,19 @@
-import Headline from "@/components/headline";
+import { Metadata } from "next";
+import { siteConfig } from "@/lib/site";
 import Section from "@/components/section";
-import { AnimatedGroup } from "@/components/ui/animated-group";
-import { transitionVariants } from "@/lib/transitions";
 import ContactSection from "@/modules/contact/contact";
+import Headline from "@/components/headline";
+
+export const metadata: Metadata = {
+    title: siteConfig.contact.title,
+    description: siteConfig.contact.description,
+};
 
 export default function Contact() {
     return (
         <Section>
-            <Headline
-                title="Get in Touch"
-                subtitle="We'd love to hear from you, and chat about how we can help you on your spiritual journey."
-            />
-            <AnimatedGroup
-                variants={{
-                    container: {
-                        visible: {
-                            transition: {
-                                staggerChildren: 0.05,
-                                delayChildren: 0.75,
-                            },
-                        },
-                    },
-                    ...transitionVariants,
-                }}
-            >
-                <ContactSection />
-            </AnimatedGroup>
+            <Headline title="Contact Us" subtitle="Get in touch with our church" />
+            <ContactSection />
         </Section>
     );
 }

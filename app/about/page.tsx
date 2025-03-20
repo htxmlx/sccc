@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+import { siteConfig } from "@/lib/site";
 import Section from "@/components/section";
 import MissionVision from "@/modules/about/mission-vision";
 import PastorsSection from "@/modules/about/pastors";
@@ -7,6 +9,11 @@ import { AnimatedGroup } from "@/components/ui/animated-group";
 import { transitionVariants } from "@/lib/transitions";
 import Headline from "@/components/headline";
 import CalltoActionSection from "@/components/cta";
+
+export const metadata: Metadata = {
+    title: siteConfig.about.title,
+    description: siteConfig.about.description,
+};
 
 export default function AboutUs() {
     return (

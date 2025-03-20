@@ -1,36 +1,24 @@
-import CalltoActionSection from "@/components/cta";
-import Headline from "@/components/headline";
+import { Metadata } from "next";
+import { siteConfig } from "@/lib/site";
 import Section from "@/components/section";
-import { AnimatedGroup } from "@/components/ui/animated-group";
-import { transitionVariants } from "@/lib/transitions";
-import TeamSection from "@/modules/about/pastors";
-import ServicesStatsSection from "@/modules/services/services-stats";
 import SundayServiceSchedule from "@/modules/services/sunday-service-schedule";
+import ServicesStats from "@/modules/services/services-stats";
+import Headline from "@/components/headline";
+
+export const metadata: Metadata = {
+    title: siteConfig.services.title,
+    description: siteConfig.services.description,
+};
 
 export default function Services() {
     return (
         <Section>
             <Headline
-                title="Services and Schedule"
-                subtitle="Come and experience the presence of God with us."
+                title="Our Services"
+                subtitle="We offer a variety of services to meet your spiritual needs."
             />
-            <AnimatedGroup
-                variants={{
-                    container: {
-                        visible: {
-                            transition: {
-                                staggerChildren: 0.05,
-                                delayChildren: 0.75,
-                            },
-                        },
-                    },
-                    ...transitionVariants,
-                }}
-            >
-                <SundayServiceSchedule />
-                <ServicesStatsSection />
-                <CalltoActionSection  />
-            </AnimatedGroup>
+            <SundayServiceSchedule />
+            <ServicesStats />
         </Section>
     );
 }
